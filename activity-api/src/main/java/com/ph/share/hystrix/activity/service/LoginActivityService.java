@@ -15,6 +15,11 @@ public class LoginActivityService implements ILoginActivityService {
     private RestTemplate restTemplate;
 
 
+    /**
+     * test
+     * @param userId
+     * @return
+     */
     public String firstLogin(Long userId) {
         return restTemplate.postForObject(PREFIX + FIRST_LOGIN_ACTIVITY, userId, String.class);
     }
